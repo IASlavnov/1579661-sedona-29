@@ -67,6 +67,10 @@ img {
 	list-style: none;
 }
 
+.site-navigation a {
+	color: var(--basic-black);
+}
+
 .site-navigation a:hover {
 	color: var(--basic-blue);
 }
