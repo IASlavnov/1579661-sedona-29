@@ -1,0 +1,221 @@
+/* Variables */
+
+:root {
+	--basic-black: #000000;
+	--basic-extra-black: #231f20;
+	--basic-light-black: #333333;
+	--basic-white: #ffffff;
+	--basic-transparent-white: rgba(255, 255, 255, 0.9);
+	--basic-gray: #888888;
+	--basci-gray-hover: #ebebeb;
+	--basic-extra-gray: #666666;
+	--basic-dark-gray: #6a6a6a;
+	--basic-extra-dark-gray: #a9a9a9;
+	--basic-light-gray: #f2f2f2;
+	--basic-extra-light-gray: #cacaca;
+	--basic-silver: #eeeeee;
+	--basic-brown: #766357;
+	--basic-brown-hover: #604e43;
+	--basic-brown-active: #503e33;
+	--basic-extra-brown: #766458;
+	--basic-blue: #83b3d2;
+	--basic-blue-hover: #669ec0;
+	--basic-blue-active: #5496bd;
+
+	--logo-blue: #81b3d3;
+	--logo-dark-blue: #23a9e1;
+	--logo-dark-brown: #491213;
+	--logo-brown: #dc6243;
+	--logo-light-brown: #f49774;
+	--logo-extra-light-brown: #f4b1a4;
+}
+
+/* Global */
+.page-body {
+	mid-width: 1280px;
+	margin: 0;
+	padding: 0;
+	font-family: "PT Sans", Arial, sans-serif;
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: 400;
+	color: var(--basic-black);
+	text-transform: uppercase;
+	background-color: var(--basic-white);
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+/* Main navigation*/
+
+.main-navigation {
+	font-size: 14px;
+	line-height: 26px;
+	font-weight: bold;
+	color: var(--basic-black);
+	background-color: var(--basic-white);
+}
+
+.site-navigation {
+	list-style: none;
+}
+
+.site-navigation a:hover {
+	color: var(--basic-blue);
+}
+
+.site-navigation a:focus {
+	color: var(--basic-black);
+	opacity: 0.3;
+}
+
+/* Reasons */
+
+.reasons {
+	text-align: center;
+}
+
+.reasons-intro {
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: bold;
+}
+
+.reasons p {
+	line-height: 26px;
+}
+
+.reasons-list {
+	list-style: none;
+}
+
+.reasons-item {
+	color: var(--basic-white);
+	background-color: var(--basic-blue);
+}
+
+.reasons-item h3 {
+	font-size: 21px;
+	line-height: 21px;
+}
+
+.reasons-city-list {
+	list-style: none;
+}
+
+.reasons-city-item {
+	color: var(--basic-black);
+	background-color: var(--basic-white);
+}
+
+.reasons-city-item h4 {
+	font-size: 21px;
+	line-height: 21px;
+}
+
+.reasons-item-background {
+	color: var(--basic-light-black);
+	background-color: var(--basic-silver);
+}
+
+/* Buttons */
+
+.button {
+	font: inherit;
+	text-align: center;
+	color: var(--basic-white);
+	vertical-align: middle;
+	text-transform: uppercase;
+	border: none;
+}
+
+/* Search */
+
+.hotels-search {
+	line-height: 24px;
+	text-align: center;
+}
+
+.hotels-search h2 {
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.button-search {
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: bold;
+	background-color: var(--basic-brown);
+}
+
+.button-search:hover {
+	background-color: var(--basic-brown-hover);
+}
+
+.button-search:active {
+	background-color: var(basic-brown-active);
+	opacity: 0.3;
+}
+
+/* Main footer*/
+.main-footer {
+	background-color: var(--basic-transparent-white);
+}
+
+.footer-contacts {
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.contacts-phone {
+	color: var(--basic-black);
+}
+
+.footer-socials {
+	text-align: center;
+}
+
+.footer-socials ul {
+	list-style: none;
+}
+
+.social-button {
+	color: var(--basic-white);
+	background-color: var(--basic-blue);
+}
+
+.social-button:hover {
+	background-color: var(--basic-blue-hover);
+}
+
+.social-button:active {
+	background-color: var(basic-blue-active);
+	opacity: 0.3;
+}
+
+.footer-copyright {
+	line-height: 26px;
+	text-align: center;
+}
+
+.button-copyright {
+	color: var(--basic-extra-black);
+}
+
+.button-copyright:hover {
+	color: var(--basic-blue);
+}
+
+.button-copyright:active {
+	color: var(--basic-extra-black)
+	opacity: 0.3;
+}

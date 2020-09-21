@@ -1,16 +1,19 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>Поиск жилья в городе Седона</title>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet"> 
+    <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
-  	<header>
-  		<nav>
-  			<a>
+  <body class="page-body">
+  	<header class="main-header">
+  		<nav class="main-navigation">
+  			<a class="main-header-logo">
   				<img src="https://via.placeholder.com/138x70" alt="Логотип сайта городка Седона">
   			</a>
-  			<ul>
+  			<ul class="site-navigation">
   				<li><a href="blank.html">Информация</a></li>
   				<li><a href="blank.html">Фото и видео</a></li>
   				<li><a href="blank.html">Карта штата</a></li>
@@ -18,63 +21,63 @@
   			</ul>
   		</nav>
   	</header>
-  	<main>
+  	<main class="container">
   		<h1>Поиск жилья в городе Седона</h1>
-  		<section>
+  		<section class="greeting">
   			<h2>Добро пожаловать в Седону!</h2>
   			<p><b>Welcome</b> - <em>to the georgeous</em> - <b>SEDONA</b></p>
   			<p><q><i>Because the Grand Canyon sucks!</i></q></p>
   		</section>
-  		<section>
+  		<section class="reasons">
   			<h2>Почему Седона круче Гранд Каньона</h2>
-  			<p><b>Седона - небольшой городок в Аризоне, заслуживающий большего!</b></p>
+  			<p class="reasons-intro"><b>Седона - небольшой городок в Аризоне, заслуживающий большего!</b></p>
   			<p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
-  			<ul>
-  				<li>
+  			<ul class="reasons-list">
+  				<li class="reasons-item">
   					<h3>Настоящий городок</h3>
   					<p>-№1-</p>
   					<p>Седона - не аттрацион для туристов, там течёт своя жизнь</p>
-  					<ul>
-  						<li>
+  					<ul class="reasons-city-list">
+  						<li class="reasons-city-item">
   							<h4>Жильё</h4>
   							<p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
   						</li>
-  						<li>
+  						<li class="reasons-city-item">
   							<h4>Еда</h4>
   							<p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
   						</li>
-  						<li>
+  						<li class="reasons-city-item">
   							<h4>Сувениры</h4>
   							<p>Не только китайского, но и местного производства!</p>
   						</li>
   					</ul>
   				</li>
-  				<li>
+  				<li class="reasons-item">
   					<h3>Там есть мост дьявола</h3>
   					<p>-№2-</p>
   					<p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
   				</li>
-  				<li>
+  				<li class="reasons-item reasons-item-background">
   					<h3>Небольшая площадь</h3>
   					<p>-№3-</p>
   					<p>Все достопримечательности находятся очень близко</p>
   				</li>
-  				<li>
+  				<li class="reasons-item reasons-item-background">
   					<h3>Красивая дорога</h3>
   					<p>-№4-</p>
   					<p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
   				</li>
-  				<li>
+  				<li class="reasons-item reasons-item-background">
   					<h3>Мало туристов</h3>
   					<p>-№5-</p>
   					<p>Большинство едет в Гранд Каньон и толпится там</p>
   				</li>
   			</ul>
   		</section>
-  		<section>
+  		<section class="hotels-search">
   			<h2>Заинтересовались?</h2>
   			<p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-  			<a href="blank.html">Поиск гостиницы в Седоне</a>
+  			<a class="button button-search" href="blank.html">Поиск гостиницы в Седоне</a>
   			<!--
   				Форма для поиска гостиницы
   			<form>
@@ -82,28 +85,30 @@
   			</form>
   			-->
   		</section>
-  		<img src="https://via.placeholder.com/1199x594" alt="Карта Седоны">
+  		<img class="map" src="https://via.placeholder.com/1199x594" alt="Карта Седоны">
   	</main>
-  	<footer>
-  		<p>#visitsedona</p>
-  		<p>Тел:<a href="tel:+74956660166"> +7(495) 666-01-66</a></p>
-  		<section>
+  	<footer class="page-footer main-footer">
+  		<section class="footer-contacts">
+        <p>#visitsedona</p>
+        <p>Тел:<a class="contacts-phone" href="tel:+74956660166"> +7(495) 666-01-66</a></p>
+      </section>
+  		<section class="footer-socials">
   			<h2>Социальные сети</h2>
   			<ul>
 		      <li>
-		        <a href="#">Вконтакте</a>
+		        <a class="social-button" href="#">Вконтакте</a>
 		      </li>
 		      <li>
-		        <a href="#">Фейсбук</a>
+		        <a class="social-button" href="#">Фейсбук</a>
 		      </li>
 		      <li>
-		        <a href="#">Инстаграм</a>
+		        <a class="social-button" href="#">Инстаграм</a>
 		      </li>
 		    </ul>
   		</section>
-  		<p>
+  		<p class="footer-copyright">
   			Website by 
-  			<a href="https://htmlacademy.ru/intensive/htmlcss"><img src="https://via.placeholder.com/113.98x39.78" alt="Логотип HTML Academy"></a>
+  			<a class="button-copyright" href="https://htmlacademy.ru/intensive/htmlcss"><img src="https://via.placeholder.com/113.98x39.78" alt="Логотип HTML Academy"></a>
   		</p>
   	</footer>
   </body>
