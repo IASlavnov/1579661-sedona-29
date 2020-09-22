@@ -21,13 +21,6 @@
 	--basic-blue: #83b3d2;
 	--basic-blue-hover: #669ec0;
 	--basic-blue-active: #5496bd;
-
-	--logo-blue: #81b3d3;
-	--logo-dark-blue: #23a9e1;
-	--logo-dark-brown: #491213;
-	--logo-brown: #dc6243;
-	--logo-light-brown: #f49774;
-	--logo-extra-light-brown: #f4b1a4;
 }
 
 /* Global */
@@ -75,9 +68,15 @@ img {
 	color: var(--basic-blue);
 }
 
-.site-navigation a:focus {
+.site-navigation a:active {
 	color: var(--basic-black);
 	opacity: 0.3;
+}
+
+/* Greeting */
+.greeting {
+	color: var(--basic-white);
+	background-color: var(--basic-blue);
 }
 
 /* Reasons */
@@ -105,7 +104,7 @@ img {
 	background-color: var(--basic-blue);
 }
 
-.reasons-item h3 {
+.reasons-item-title {
 	font-size: 21px;
 	line-height: 21px;
 }
@@ -119,12 +118,12 @@ img {
 	background-color: var(--basic-white);
 }
 
-.reasons-city-item h4 {
+.reasons-city-item-title {
 	font-size: 21px;
 	line-height: 21px;
 }
 
-.reasons-item-background {
+.reasons-item-background-silver {
 	color: var(--basic-light-black);
 	background-color: var(--basic-silver);
 }
@@ -147,7 +146,7 @@ img {
 	text-align: center;
 }
 
-.hotels-search h2 {
+.hotels-search-title {
 	font-size: 30px;
 	font-weight: bold;
 }
