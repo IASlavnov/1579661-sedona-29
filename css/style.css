@@ -73,6 +73,19 @@ img {
 	opacity: 0.3;
 }
 
+.site-navigation .current-page {
+  color: var(--basic-brown);
+}
+
+.site-navigation .current-page:hover {
+  color: var(--basic-brown);
+}
+
+.site-navigation .current-page:active {
+  color: var(--basic-brown);
+  opacity: 1;
+}
+
 /* Greeting */
 .greeting {
 	color: var(--basic-white);
@@ -154,7 +167,6 @@ img {
 .button-search {
 	font-size: 21px;
 	line-height: 26px;
-	font-weight: bold;
 	background-color: var(--basic-brown);
 }
 
@@ -221,4 +233,123 @@ img {
 .button-copyright:active {
 	color: var(--basic-extra-black)
 	opacity: 0.3;
+}
+
+/* Hotels page */
+
+/* Sort hotels */
+
+.hotels-sort-results {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+}
+
+.hotels-sort-subtitle {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.hotels-sort-price {
+  color: var(--basic-blue);
+}
+
+.hotels-sort-type, 
+.hotels-sort-rating {
+  opacity: 0.3;
+  border-bottom: 1px dashed var(--basic-blue);
+}
+
+.hotels-sort-price:hover,
+.hotels-sort-type:hover, 
+.hotels-sort-rating:hover {
+  opacity: 1;
+  color: var(--basic-blue);
+  border-bottom: 1px dashed var(--basic-blue);
+}
+
+.hotels-sort-price:active,
+.hotels-sort-type:active, 
+.hotels-sort-rating:active {
+  opacity: 1;
+  color: var(--basic-black);
+  border: none;
+}
+
+.hotels-sort-order:hover {
+  background-color: var(--basic-black);
+}
+
+.hotels-sort-order:active {
+  background-color: var(--basic-blue);
+}
+
+.hotels-sort-ascending {
+  background-color: var(--basic-extra-light-gray);
+}
+
+.hotels-sort-descending {
+  background-color: var(--basic-blue);
+}
+
+/* Results */
+
+.hotels-results-list {
+  list-style: none;
+}
+
+.hotels-results-item {
+  color: var(--basic-light-black);
+}
+
+.hotels-results-title {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  color: var(--basic-black);
+}
+
+.hotels-results-title:hover {
+  color: var(--basic-blue);
+}
+
+.hotels-results-title:active {
+  color: var(--basic-black);
+  opacity: 0.3;
+}
+
+.button {
+  color: var(--basic-white);
+  font-weight: bold;
+}
+
+.button-details {
+  background-color: var(--basic-blue);
+}
+
+.button-details:hover {
+  background-color: var(--basic-blue-hover);
+}
+
+.button-details:active {
+  background-color: var(--basic-blue-active);
+  opacity: 0.3;
+}
+
+.button-book {
+  background-color: var(--basic-brown);
+}
+
+.button-book:hover {
+  background-color: var(--basic-brown-hover);
+}
+
+.button-book:active {
+  background-color: var(--basic-brown-active);
+  opacity: 0.3;
+}
+
+.hotels-results-rating {
+  color: var(--basic-extra-gray);
+  background-color: var(--basic-light-gray);
 }
