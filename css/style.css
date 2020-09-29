@@ -89,7 +89,7 @@ img {
 /* Greeting */
 .greeting {
 	color: var(--basic-white);
-	background-color: var(--basic-blue);
+	background-color: var(--basic-gray);
 }
 
 /* Reasons */
@@ -147,6 +147,7 @@ img {
 	font: inherit;
 	text-align: center;
 	color: var(--basic-white);
+  font-weight: bold;
 	vertical-align: middle;
 	text-transform: uppercase;
 	border: none;
@@ -204,8 +205,11 @@ img {
 }
 
 .social-button {
-	color: var(--basic-white);
-	background-color: var(--basic-blue);
+  display: inline-block;
+  vertical-align: 48px;
+  width: 46px;
+  height: 48px;
+  background-color: var(--basic-blue);
 }
 
 .social-button:hover {
@@ -275,20 +279,52 @@ img {
   border: none;
 }
 
-.hotels-sort-order:hover {
-  background-color: var(--basic-black);
-}
-
-.hotels-sort-order:active {
-  background-color: var(--basic-blue);
-}
-
 .hotels-sort-ascending {
-  background-color: var(--basic-extra-light-gray);
+  background: url(../img/icon-up-dir.svg);
+  display: inline-block;
+  vertical-align: middle;
+  width: 11px;
+  height: 10px;
+}
+
+.hotels-sort-ascending:hover {
+  background: url(../img/icon-up-dir-hover.svg);
+  display: inline-block;
+  vertical-align: middle;
+  width: 11px;
+  height: 10px;
+}
+
+.hotels-sort-ascending:active {
+  background: url(../img/icon-up-dir-active.svg);
+  display: inline-block;
+  vertical-align: middle;
+  width: 11px;
+  height: 10px;
 }
 
 .hotels-sort-descending {
-  background-color: var(--basic-blue);
+  background: url(../img/icon-down-dir.svg);
+  display: inline-block;
+  vertical-align: middle;
+  width: 11px;
+  height: 10px;
+}
+
+.hotels-sort-descending:hover {
+  background: url(../img/icon-down-dir-hover.svg);
+  display: inline-block;
+  vertical-align: middle;
+  width: 11px;
+  height: 10px;
+}
+
+.hotels-sort-descending:active {
+  background: url(../img/icon-down-dir.svg);
+  display: inline-block;
+  vertical-align: middle;
+  width: 11px;
+  height: 10px;
 }
 
 /* Results */
@@ -320,11 +356,6 @@ img {
 .hotels-results-item-rating {
   color: var(--basic-extra-gray);
   background-color: var(--basic-light-gray);
-}
-
-.button {
-  color: var(--basic-white);
-  font-weight: bold;
 }
 
 .button-details {
