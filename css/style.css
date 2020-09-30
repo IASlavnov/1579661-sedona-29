@@ -18,7 +18,7 @@
 	--basic-brown-hover: #604e43;
 	--basic-brown-active: #503e33;
 	--basic-extra-brown: #766458;
-	--basic-blue: #83b3d2;
+	--basic-blue: #81b3d2;
 	--basic-blue-hover: #669ec0;
 	--basic-blue-active: #5496bd;
 }
@@ -206,7 +206,7 @@ img {
 
 .social-button {
   display: inline-block;
-  vertical-align: 48px;
+  vertical-align: middle;
   width: 46px;
   height: 48px;
   background-color: var(--basic-blue);
@@ -279,52 +279,22 @@ img {
   border: none;
 }
 
-.hotels-sort-ascending {
-  background: url(../img/icon-up-dir.svg);
-  display: inline-block;
-  vertical-align: middle;
-  width: 11px;
-  height: 10px;
+.hotels-sort-icon-up-dir {
+  fill: var(--basic-extra-light-gray);
 }
 
-.hotels-sort-ascending:hover {
-  background: url(../img/icon-up-dir-hover.svg);
-  display: inline-block;
-  vertical-align: middle;
-  width: 11px;
-  height: 10px;
+.hotels-sort-icon-down-dir {
+  fill: var(--basic-blue);
 }
 
-.hotels-sort-ascending:active {
-  background: url(../img/icon-up-dir-active.svg);
-  display: inline-block;
-  vertical-align: middle;
-  width: 11px;
-  height: 10px;
+.hotels-sort-icon-up-dir:hover,
+.hotels-sort-icon-down-dir:hover {
+  fill: var(--basic-black);
 }
 
-.hotels-sort-descending {
-  background: url(../img/icon-down-dir.svg);
-  display: inline-block;
-  vertical-align: middle;
-  width: 11px;
-  height: 10px;
-}
-
-.hotels-sort-descending:hover {
-  background: url(../img/icon-down-dir-hover.svg);
-  display: inline-block;
-  vertical-align: middle;
-  width: 11px;
-  height: 10px;
-}
-
-.hotels-sort-descending:active {
-  background: url(../img/icon-down-dir.svg);
-  display: inline-block;
-  vertical-align: middle;
-  width: 11px;
-  height: 10px;
+.hotels-sort-icon-up-dir:active,
+.hotels-sort-icon-down-dir:active {
+  fill: var(--basic-blue);
 }
 
 /* Results */
