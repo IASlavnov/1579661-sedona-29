@@ -29,13 +29,17 @@
       </section>
       <section class="reasons">
         <h2>Почему Седона круче Гранд Каньона</h2>
-        <p class="reasons-intro"><b>Седона - небольшой городок в Аризоне, заслуживающий большего!</b></p>
-        <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+        <div class="reasons-intro-container">
+          <p class="reasons-intro"><b>Седона - небольшой городок в Аризоне, заслуживающий большего!</b></p>
+          <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+        </div>
         <ul class="reasons-list">
-          <li class="reasons-item">
-            <h3 class="reasons-item-title">Настоящий городок</h3>
-            <p>-№1-</p>
-            <p>Седона - не аттрацион для туристов, там течёт своя жизнь</p>
+          <li class="reasons-item reason-1">
+            <div class="reason-1-description">
+              <h3 class="reasons-item-title">Настоящий городок</h3>
+              <p>-№1-</p>
+              <p>Седона - не аттрацион для туристов, там течёт своя жизнь</p>
+            </div>
             <ul class="reasons-city-list">
               <li class="reasons-city-item">
                 <h4 class="reasons-city-item-title">Жильё</h4>
@@ -50,23 +54,27 @@
                 <p>Не только китайского, но и местного производства!</p>
               </li>
             </ul>
+            <img class="reason-1-image" src="https://via.placeholder.com/800x256" alt="">
           </li>
-          <li class="reasons-item">
-            <h3 class="reasons-item-title">Там есть мост дьявола</h3>
-            <p>-№2-</p>
-            <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+          <li class="reasons-item reason-2">
+            <div class="reason-2-description">
+              <h3 class="reasons-item-title">Там есть мост дьявола</h3>
+              <p>-№2-</p>
+              <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+            </div>
+            <img class="reason-2-image" src="https://via.placeholder.com/800x256" alt="">
           </li>
-          <li class="reasons-item reasons-item-background-silver">
+          <li class="reasons-item reasons-item-background-silver reason-3">
             <h3 class="reasons-item-title">Небольшая площадь</h3>
             <p>-№3-</p>
             <p>Все достопримечательности находятся очень близко</p>
           </li>
-          <li class="reasons-item reasons-item-background-silver">
+          <li class="reasons-item reasons-item-background-silver reason-4">
             <h3 class="reasons-item-title">Красивая дорога</h3>
             <p>-№4-</p>
             <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </li>
-          <li class="reasons-item reasons-item-background-silver">
+          <li class="reasons-item reasons-item-background-silver reason-5">
             <h3 class="reasons-item-title">Мало туристов</h3>
             <p>-№5-</p>
             <p>Большинство едет в Гранд Каньон и толпится там</p>
@@ -87,28 +95,30 @@
       <img class="map" src="img/map.jpg" width="1199" height="594" alt="Карта Седоны">
     </main>
     <footer class="page-footer main-footer">
-      <section class="footer-contacts">
-        <p>#visitsedona</p>
-        <p>Тел:<a class="contacts-phone" href="tel:+74956660166"> +7(495) 666-01-66</a></p>
-      </section>
-      <section class="footer-socials">
-        <h2>Социальные сети</h2>
-        <ul>
-          <li class="social-item">
-            <a class="social-button" href="#"><img src="img/twitter.svg" width="16.98" height="15.01" alt="Twitter"></a>
-          </li>
-          <li>
-            <a class="social-button" href="#"><img src="img/fb-icon.svg" width="12" height="22" alt="Facebook"></a>
-          </li>
-          <li>
-            <a class="social-button" href="#"><img src="img/youtube.svg" width="20" height="16" alt="Youtube"></a>
-          </li>
-        </ul>
-      </section>
-      <p class="footer-copyright">
-        Website by 
-        <a class="button-copyright" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип HTML Academy"></a>
-      </p>
+      <div class="container">
+        <section class="footer-contacts">
+          <p>#visitsedona</p>
+          <p>Тел:<a class="contacts-phone" href="tel:+74956660166"> +7(495) 666-01-66</a></p>
+        </section>
+        <section class="footer-socials">
+          <h2>Социальные сети</h2>
+          <ul>
+            <li>
+              <a class="social-button" href="#"><img src="img/twitter.svg" width="16.98" height="15.01" alt="Twitter"></a>
+            </li>
+            <li>
+              <a class="social-button" href="#"><img src="img/fb-icon.svg" width="12" height="22" alt="Facebook"></a>
+            </li>
+            <li>
+              <a class="social-button" href="#"><img src="img/youtube.svg" width="20" height="16" alt="Youtube"></a>
+            </li>
+          </ul>
+        </section>
+        <p class="footer-copyright">
+          Website by 
+          <a class="button-copyright" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип HTML Academy"></a>
+        </p>
+      </div>
     </footer>
   </body>
 </html>
