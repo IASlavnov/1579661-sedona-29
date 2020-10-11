@@ -55,8 +55,9 @@ img {
 }
 
 .page-body {
-  margin-left: 40px;
-  margin-right: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
   min-height: 100%;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
@@ -105,29 +106,26 @@ img {
 
 /* Container */
 .container {
-  width: 1200px;
-  margin: 0 auto;
+  display: grid;
+  grid-template-rows: min-content 509px auto 291px auto;
 }
 
 /* Greeting */
 .greeting {
-  height: 509px; /* Убрать когда будет добавлено фоновое изображение */
-  display: grid;
-  grid-template-columns: 1fr;
 	color: var(--basic-white);
 	background-color: var(--basic-gray);
 }
 
-.greeting-image-welcome {
-  
-  justify-self: center;
+.greeting-image-welcome { 
+  display: block;
+  margin: auto;
 }
 
 /* Reasons */
 
 .reasons {
   display: grid;
-  grid-template-rows: auto 3fr;
+  grid-template-rows: 1fr 3fr;
   margin: 0;
 	text-align: center;
 }
@@ -246,9 +244,14 @@ img {
 	border: none;
 }
 
+.map-wrapper {
+  justify-self: center;
+}
+
 /* Search */
 
 .hotels-search {
+  justify-self: center;
 	line-height: 24px;
 	text-align: center;
 }
@@ -279,7 +282,7 @@ img {
   padding: 30px 0;
 }
 
-.main-footer .container {
+.page-footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
