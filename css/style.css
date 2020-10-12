@@ -462,22 +462,25 @@ img {
   grid-template-columns: 208px 1fr 208px;
   color: var(--basic-light-black);
   border: 1px solid var(--basic-silver);
+  position: relative;
 }
 
 .hotels-results-item-description-wrapper {
   grid-column: 2 / 3;
-  grid-row: 1 / 2;
   justify-self: start;
   align-self: space-around;
   margin-left: 29px;
 }
 
-.hotels-results-item img {
-  justify-self: end;
-  align-self: center;
+.hotels-results-item-description-wrapper img {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 73px;
 }
 
 .hotels-results-item-rating-wrapper {
+  grid-column: -1 / -2;
   margin-right: 73px;
   justify-self: end;
   align-self: center;
