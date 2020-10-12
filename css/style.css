@@ -349,17 +349,52 @@ img {
 
 /* Hotels page */
 
+/* Hotels container */
+
+.inner-page .container {
+  display: grid;
+  grid-template-rows: min-content 217px min-content 1fr;
+}
+
+/* Hotels filter */
+
+.hotels-filter {
+  background-color: var(--basic-gray);
+}
+
 /* Sort hotels */
+
+.hotels-sort {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+}
+
+.hotels-sort h2 {
+  grid-column: 1 / -1;
+}
+
+.hotels-sort-description-wrapper {
+  margin-left: 73px;
+  justify-self: space-between;
+}
+
+.hotels-sort-icon-wrapper {
+  margin-right: 73px;
+  justify-self: end;
+}
 
 .hotels-sort-results {
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
+  display: inline;
 }
 
 .hotels-sort-subtitle {
   font-size: 12px;
   line-height: 18px;
+  display: inline;
 }
 
 .hotels-sort-item {
@@ -408,11 +443,29 @@ img {
 /* Results */
 
 .hotels-results-list {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
 .hotels-results-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   color: var(--basic-light-black);
+  border: 1px solid var(--basic-silver);
+}
+
+.hotels-results-item-description-wrapper {
+  margin-left: 73px;
+  justify-self: space-around;
+}
+
+.hotels-results-item-rating-wrapper {
+  margin-right: 73px;
+  justify-self: end;
+  align-self: center;
 }
 
 .hotels-results-item-title {
