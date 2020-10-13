@@ -368,9 +368,10 @@ img {
 .hotels-sort {
   display: grid;
   grid-template-columns: 208px 1fr 208px;
+  column-gap: 29px;
   align-items: baseline;
   margin: 0;
-  padding: 0;
+  padding: 0 73px;
 }
 
 .hotels-sort-item-wrapper {
@@ -380,7 +381,6 @@ img {
 }
 
 .hotels-sort-icon-wrapper {
-  margin-right: 73px;
   justify-self: end;
 }
 
@@ -388,7 +388,6 @@ img {
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
-  margin-left: 73px;
 }
 
 .hotels-sort-subtitle {
@@ -474,7 +473,7 @@ img {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  left: 146px;
+  left: 73px;
 }
 
 .hotels-results-item-rating-wrapper {
