@@ -80,10 +80,34 @@ img {
 	font-weight: bold;
 	color: var(--basic-black);
 	background-color: var(--basic-white);
+  position: relative;
+}
+
+.main-header-logo {
+  width: 138;
+  height: 70;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .site-navigation {
+  display: flex;
+  justify-content: flex-start;
+  width: 1200;
+  padding: 15px 0;
+  margin: 0 72px;
 	list-style: none;
+}
+
+.site-navigation li:first-child {
+  margin-right: 134px;
+}
+
+.site-navigation li:nth-child(3) {
+  margin-left: auto;
+  margin-right: 147px;
 }
 
 .site-navigation a {
@@ -115,18 +139,24 @@ img {
 /* Container */
 .container {
   display: grid;
-  grid-template-rows: min-content 509px auto 291px auto;
+  grid-template-rows: 509px auto 291px auto;
 }
 
 /* Greeting */
 .greeting {
 	color: var(--basic-white);
 	background-color: var(--basic-gray);
+  position: relative;
+  padding: auto;
 }
 
 .greeting-image-welcome { 
   display: block;
-  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
 }
 
 /* Reasons */
@@ -136,6 +166,7 @@ img {
   grid-template-rows: 1fr 3fr;
   margin: 0;
 	text-align: center;
+  align-items: center;
 }
 
 .reasons-intro-container {
@@ -218,10 +249,11 @@ img {
 .reasons-city-list {
   grid-row: 2 / 3;
   grid-column: 1 / -1;
-  display: grid;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   margin: 0;
   padding: 0;
-  grid-template-columns: repeat(3, 1fr);
 	list-style: none;
 }
 
@@ -291,8 +323,9 @@ img {
 }
 
 .page-footer {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .footer-contacts {
@@ -313,9 +346,8 @@ img {
 }
 
 .footer-socials ul {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  column-gap: 6px;
+  display: flex;
+  justify-content: space-between;
   width: 150px;
 	list-style: none;
 }
@@ -340,10 +372,14 @@ img {
 .footer-copyright {
 	line-height: 26px;
 	text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .button-copyright {
 	color: var(--basic-extra-black);
+  margin-left: 8px;
 }
 
 .button-copyright:hover {
