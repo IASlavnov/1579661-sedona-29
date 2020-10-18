@@ -2,6 +2,7 @@
 
 :root {
 	--basic-black: #000000;
+  --basic-transparent-black: rgba(0, 0, 0, 0.3);
 	--basic-extra-black: #231f20;
 	--basic-light-black: #333333;
 	--basic-white: #ffffff;
@@ -125,8 +126,7 @@ img {
 }
 
 .site-navigation a:active {
-	color: var(--basic-black);
-	opacity: 0.3;
+	color: var(--basic-transparent-black);
 }
 
 .site-navigation .current-page {
@@ -139,7 +139,6 @@ img {
 
 .site-navigation .current-page:active {
   color: var(--basic-brown);
-  opacity: 1;
 }
 
 /* Container */
@@ -374,6 +373,7 @@ img {
   justify-content: center;
   align-items: center;
   margin-right: 6px;
+  margin-bottom: 6px;
   width: 46px;
   height: 48px;
   background-color: var(--basic-blue);
@@ -384,8 +384,11 @@ img {
 }
 
 .social-button:active {
-	background-color: var(basic-blue-active);
-	opacity: 0.3;
+	background-color: var(--basic-blue-active);
+}
+
+.social-button:active img {
+  opacity: 0.3;
 }
 
 .footer-copyright {
@@ -398,17 +401,16 @@ img {
 }
 
 .button-copyright {
-	color: var(--basic-extra-black);
   margin-left: 8px;
 }
 
-.button-copyright:hover {
-	color: var(--basic-blue);
+.button-copyright:hover path {
+	fill: var(--basic-blue);
 }
 
-.button-copyright:active {
-	color: var(--basic-extra-black)
-	opacity: 0.3;
+.button-copyright:active path {
+  fill: var(--basic-extra-black);
+  opacity: 0.3;
 }
 
 /* Hotels page */
@@ -459,25 +461,22 @@ img {
 .hotels-sort-item {
   font-size: 12px;
   line-height: 18px;
-  opacity: 0.3;
+  color: var(--basic-transparent-black);
   border-bottom: 1px dashed var(--basic-blue);
   margin-right: 30px;
 }
 
 .hotels-sort-item-active {
   color: var(--basic-blue);
-  opacity: 1;
   border-bottom: none;
 }
 
 .hotels-sort-item:hover {
-  opacity: 1;
   color: var(--basic-blue);
   border-bottom: 1px dashed var(--basic-blue);
 }
 
 .hotels-sort-item:active {
-  opacity: 1;
   color: var(--basic-black);
   border: none;
 }
@@ -567,8 +566,7 @@ img {
 }
 
 .hotels-results-item-title:active {
-  color: var(--basic-black);
-  opacity: 0.3;
+  color: var(--basic-transparent-black);
 }
 
 .hotels-results-item-rating {
