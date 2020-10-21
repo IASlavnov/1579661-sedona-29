@@ -7,6 +7,7 @@
   --basic-light-black: #333333;
   --basic-white: #ffffff;
   --basic-transparent-white: rgba(255, 255, 255, 0.9);
+  --basic-transparent: rgba(0, 0, 0, 0);
   --basic-gray: #888888;
   --basic-gray-hover: #ebebeb;
   --basic-extra-gray: #666666;
@@ -14,6 +15,7 @@
   --basic-extra-dark-gray: #a9a9a9;
   --basic-light-gray: #f2f2f2;
   --basic-extra-light-gray: #cacaca;
+  --basic-gray-form: #ababab;
   --basic-silver: #eeeeee;
   --basic-brown: #766357;
   --basic-brown-hover: #604e43;
@@ -183,18 +185,18 @@ img {
   padding: 0;
 }
 
-.reasons-intro {
+.reasons-intro-container .reasons-intro {
 	font-size: 21px;
 	line-height: 26px;
 	font-weight: bold;
   margin: 0;
-  padding: 42.5px 365px;
+  padding: 42.5px 365px 40px;
 }
 
 .reasons p {
 	line-height: 26px;
   margin: 0;
-  padding-bottom: 51px;
+  padding-bottom: 54px; /*51*/
 }
 
 .reasons-list {
@@ -219,11 +221,12 @@ img {
 	font-size: 21px;
 	line-height: 21px;
   margin: 0;
-  padding: 47px 120px 25px;
+  padding: 47px 125px 25px;
 }
 
 .reasons-item p {
-  padding: 0 45px 23px;
+  padding: 0 45px 23px; 
+  line-height: 21px;
 }
 
 .reason-1 {
@@ -337,7 +340,8 @@ img {
 }
 
 .reasons-city-item p {
-  padding-bottom: 82px;
+  line-height: 21px;
+  padding: 0 50px 82px;
 }
 
 .reasons-item-background-silver {
@@ -376,7 +380,7 @@ img {
 	font-weight: bold;
   margin: 0;
   padding-top: 58px;
-  padding-bottom: 40px;
+  padding-bottom: 30px;
 }
 
 .hotels-search p {
@@ -417,37 +421,34 @@ img {
   left: 50%;
   transform: translateX(-50%);
   z-index: 1;
-  width: 568px;
-  height: 395px;
+  width: 458px;
+  height: 285px;
+  padding: 55px;
   box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
 }
 
-.modal-search-form p {
+.modal-search-form .modal-search-item {
   padding-bottom: 0;
   font-weight: bold;
   line-height: 26px;
-}
-
-.modal-search-item {
-  width: 458px;
   position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
 }
 
 .modal-search-item label {
-  margin-right: 10px;
+  width: 25%;
+  text-align: left;
 }
 
 .modal-search-item input {
-  width: 346px;
+  width: 75%;
   font: inherit;
   background-color: var(--basic-light-gray);
   box-sizing: border-box;
-  margin-bottom: 30px;
+  border: none;
   padding-left: 12px;
   padding-top: 6px;
   padding-bottom: 6px;
@@ -465,8 +466,14 @@ img {
 
 .modal-search-item .modal-search-item-calendar {
   position: absolute;
-  top: 7px;
-  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--basic-transparent);
+  border: none;
 }
 
 .modal-search-item-calendar:hover path {
@@ -478,33 +485,36 @@ img {
 }
 
 .modal-search-item-persons-containter {
-  width: 458px;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
 }
 
-.modal-search-item-persons {
-  width: 226px;
-  text-align: left;
+.modal-search-item-persons-containter .modal-search-item-persons {
+  width: 50%;
+  margin-bottom: 55px;
 }
 
-.modal-search-item-persons:last-child {
-  text-align: right;
+.modal-search-item-persons label {
+  width: 50%;
+}
+
+.modal-search-item-persons span {
+  display: flex;
+  width: 50%;
 }
 
 .modal-search-item-persons input {
-  width: 114px;
+  width: calc(100% / 3);
   text-align: center;
   padding: 6px 0;
-  position: relative;
 }
 
 .modal-search-item-persons .modal-adults-minus {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 0;
+  width: calc(100% / 3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--basic-light-gray);
+  border: none;
 }
 
 .modal-adults-minus:hover path {
@@ -516,10 +526,12 @@ img {
 }
 
 .modal-search-item-persons .modal-adults-plus {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  right: 0;
+  width: calc(100% / 3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--basic-light-gray);
+  border: none;
 }
 
 .modal-adults-plus:hover path {
@@ -561,10 +573,10 @@ img {
 
 .page-footer {
   background-color: var(--basic-transparent-white);
-  padding: 30px 72px;
+  padding: 0 72px;
   margin: 0;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -574,12 +586,18 @@ img {
 }
 
 .footer-contacts {
-  margin: 0;
+  /*margin: 0;*/
 	font-size: 21px;
 	line-height: 26px;
 	font-weight: bold;
-  width: 352px;
+  width: 328px;
 	text-align: center;
+  align-items: top;
+}
+
+.footer-contacts p {
+  margin: 0;
+  padding-bottom: 10px;
 }
 
 .contacts-phone {
@@ -587,7 +605,7 @@ img {
 }
 
 .footer-socials {
-  width: 352px;
+  width: 400px;
 	text-align: center;
   justify-self: center;
 }
@@ -596,7 +614,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 0;
+  margin: 35px 0;
   padding: 0;
 	list-style: none;
 }
@@ -627,7 +645,7 @@ img {
 .footer-copyright {
 	line-height: 26px;
 	text-align: center;
-  width: 352px;
+  width: 328px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -653,6 +671,65 @@ img {
 .hotels-filter {
   background-color: var(--basic-gray);
 }
+
+.filter-item {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.range-filter {
+  width: 317px;
+}
+
+.filter-item legend {
+  color: var(--basic-white);
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.range-controls {
+  height: 19px;
+  padding-top: 17px;
+  position: relative;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: var(--basic-transparent-white-active);
+}
+
+.range-controls .bar {
+  width: 78%;
+  height: 2px;
+  background: var(--basic-white);
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 9px;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  padding: 0;
+  border: 8px solid var(--basic-white);
+  background-color: var(--basic-gray-form);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.range-controls .toggle-max {
+  left: 248px;
+}
+
+/*.price-controls .label {
+  color: var(--basic-white);
+}
+
+.price-controls input {
+  font-family: inherit;
+  font-size: inherit;
+}*/
 
 /* Sort hotels */
 

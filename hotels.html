@@ -25,9 +25,63 @@
       <h1 class="visually-hidden">Бронирование отелей в городе Седона</h1>
       <section class="hotels-filter">
         <h2>Фильтр отелей</h2>
-        <!-- 
-          <form>Форма для фильтра</form>
-        -->
+        <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+          <fieldset>
+            <legend>Инфраструктура:</legend>
+            <ul>
+              <li>
+                <input type="checkbox" name="pool" id="pool" checked>
+                <label for="pool">Бассейн</label>
+              </li>
+              <li>
+                <input type="checkbox" name="parking" id="parking">
+                <label for="parking">Парковка</label>
+              </li>
+              <li>
+                <input type="checkbox" name="wi-fi" id="wi-fi">
+                <label for="wi-fi">WI-FI</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Тип жилья:</legend>
+            <ul>
+              <li>
+                <input type="checkbox" name="hotel" id="hotel" checked>
+                <label for="hotel">Гостиница</label>
+              </li>
+              <li>
+                <input type="checkbox" name="motel" id="motel" checked>
+                <label for="motel">Мотель</label>
+              </li>
+              <li>
+                <input type="checkbox" name="apartment" id="apartment" checked>
+                <label for="apartment">Апартаменты</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="filter-item">
+            <legend>Стоимость в сутки (р):</legend>
+            <div class="range-filter">
+              <div class="price-controls">
+                <label class="min-price">
+                  от <input type="number" name="min-price" value="0">
+                </label>
+                <label class="max-price">
+                  до <input type="number" name="max-price" value="3000">
+                </label>
+              </div>
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="toggle toggle-min" tabindex="0"></div>
+                <div class="toggle toggle-max" tabindex="0"></div>
+              </div>
+            </div>
+          </fieldset>
+          <button class="filter-button" type="submit">Показать</button>
+        </form>
       </section>
       <section class="hotels-sort">
         <h2 class="visually-hidden">Сортировка отелей</h2>
