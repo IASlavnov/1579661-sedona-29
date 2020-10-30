@@ -29,25 +29,25 @@
 
 /* Global */
 .page-body {
-	min-width: 1200px;
-	margin: 0;
-	padding: 0;
-	font-family: "PT Sans", Arial, sans-serif;
-	font-size: 14px;
-	line-height: 21px;
-	font-weight: 400;
-	color: var(--basic-black);
-	text-transform: uppercase;
-	background-color: var(--basic-white);
+  min-width: 1200px;
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: var(--basic-black);
+  text-transform: uppercase;
+  background-color: var(--basic-white);
 }
 
 a {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 img {
-	max-width: 100%;
-	height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 .visually-hidden {
@@ -85,11 +85,11 @@ img {
 /* Main navigation*/
 
 .main-navigation {
-	font-size: 14px;
-	line-height: 26px;
-	font-weight: bold;
-	color: var(--basic-black);
-	background-color: var(--basic-white);
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
   position: relative;
 }
 
@@ -127,15 +127,15 @@ img {
 }
 
 .site-navigation a {
-	color: var(--basic-black);
+  color: var(--basic-black);
 }
 
 .site-navigation a:hover {
-	color: var(--basic-blue);
+  color: var(--basic-blue);
 }
 
 .site-navigation a:active {
-	color: var(--basic-transparent-black);
+  color: var(--basic-transparent-black);
 }
 
 .site-navigation .current-page {
@@ -158,8 +158,8 @@ img {
 
 /* Greeting */
 .greeting {
-	color: var(--basic-white);
-	background-color: var(--basic-gray);
+  color: var(--basic-white);
+  background-color: var(--basic-gray);
   background-image: url('../img/shape.svg'),
   url('../img/background-photo.jpg'); 
   background-position: bottom, center;
@@ -180,7 +180,7 @@ img {
   display: grid;
   grid-template-rows: auto auto;
   margin: 0;
-	text-align: center;
+  text-align: center;
   align-items: center;
 }
 
@@ -191,15 +191,15 @@ img {
 }
 
 .reasons-intro-container .reasons-intro {
-	font-size: 21px;
-	line-height: 26px;
-	font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
   margin: 0;
   padding: 42.5px 365px 40px;
 }
 
 .reasons p {
-	line-height: 26px;
+  line-height: 26px;
   margin: 0;
   padding-bottom: 54px; /*51*/
 }
@@ -214,23 +214,23 @@ img {
   "r1 r1 r1"
   "r2 r2 r2"
   "r3 r4 r5";
-	list-style: none;
+  list-style: none;
 }
 
 .reasons-item {
-	color: var(--basic-white);
-	background-color: var(--basic-blue);
+  color: var(--basic-white);
+  background-color: var(--basic-blue);
 }
 
 .reasons-item-title {
-	font-size: 21px;
-	line-height: 21px;
+  font-size: 21px;
+  line-height: 21px;
   margin: 0;
   padding: 47px 125px 25px;
 }
 
 .reasons-item p {
-  padding: 0 45px 23px; 
+  padding: 1px 45px 23px; 
   line-height: 21px;
 }
 
@@ -279,18 +279,18 @@ img {
   justify-content: space-around;
   margin: 0;
   padding: 0;
-	list-style: none;
+  list-style: none;
 }
 
 .reasons-city-item {
-	color: var(--basic-black);
-	background-color: var(--basic-white);
+  color: var(--basic-black);
+  background-color: var(--basic-white);
   width: 400px;
 }
 
 .reasons-city-item-title {
-	font-size: 21px;
-	line-height: 21px;
+  font-size: 21px;
+  line-height: 21px;
   margin: 0;
   padding-top: 160px;
   padding-bottom: 25px;
@@ -350,8 +350,8 @@ img {
 }
 
 .reasons-item-background-silver {
-	color: var(--basic-light-black);
-	background-color: var(--basic-silver);
+  color: var(--basic-light-black);
+  background-color: var(--basic-silver);
 }
 
 .reasons-item-background-silver p {
@@ -362,27 +362,27 @@ img {
 /* Buttons */
 
 .button {
-	font: inherit;
-	text-align: center;
-	color: var(--basic-white);
+  font: inherit;
+  text-align: center;
+  color: var(--basic-white);
   font-weight: bold;
-	vertical-align: middle;
-	text-transform: uppercase;
-	border: none;
+  vertical-align: middle;
+  text-transform: uppercase;
+  border: none;
 }
 
 /* Search */
 
 .hotels-search {
   justify-self: center;
-	line-height: 24px;
-	text-align: center;
+  line-height: 24px;
+  text-align: center;
   position: relative;
 }
 
 .hotels-search-title {
-	font-size: 30px;
-	font-weight: bold;
+  font-size: 30px;
+  font-weight: bold;
   margin: 0;
   padding-top: 58px;
   padding-bottom: 30px;
@@ -394,9 +394,9 @@ img {
 }
 
 .button-search {
-	font-size: 21px;
-	line-height: 26px;
-	background-color: var(--basic-brown);
+  font-size: 21px;
+  line-height: 26px;
+  background-color: var(--basic-brown);
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -408,12 +408,12 @@ img {
 }
 
 .button-search:hover {
-	background-color: var(--basic-brown-hover);
+  background-color: var(--basic-brown-hover);
 }
 
 .button-search:active {
-	background-color: var(--basic-brown-active);
-	color: var(--basic-transparent-white-active);
+  background-color: var(--basic-brown-active);
+  color: var(--basic-transparent-white-active);
 }
 
 .modal {
@@ -532,7 +532,8 @@ img {
 
 .modal-search-item-persons:last-child label {
   text-align: center;
-  padding-left: 15px;
+  padding-left: 17px;
+  width: 45%;
 }
 
 .modal-search-item-persons span {
@@ -601,7 +602,7 @@ img {
 
 /* Main footer*/
 .main-footer {
-	position: relative;
+  position: relative;
 }
 
 .map {
@@ -626,11 +627,11 @@ img {
 }
 
 .footer-contacts {
-	font-size: 21px;
-	line-height: 26px;
-	font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
   width: 328px;
-	text-align: center;
+  text-align: center;
 }
 
 .footer-contacts p {
@@ -640,12 +641,12 @@ img {
 }
 
 .contacts-phone {
-	color: var(--basic-black);
+  color: var(--basic-black);
 }
 
 .footer-socials {
   width: 400px;
-	text-align: center;
+  text-align: center;
   justify-self: center;
 }
 
@@ -653,10 +654,10 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 38px 0;
+  margin: 35px 0;
   margin-left: 4px;
   padding: 0;
-	list-style: none;
+  list-style: none;
 }
 
 .social-button {
@@ -671,11 +672,11 @@ img {
 }
 
 .social-button:hover {
-	background-color: var(--basic-blue-hover);
+  background-color: var(--basic-blue-hover);
 }
 
 .social-button:active {
-	background-color: var(--basic-blue-active);
+  background-color: var(--basic-blue-active);
 }
 
 .social-button:active img {
@@ -683,8 +684,8 @@ img {
 }
 
 .footer-copyright {
-	line-height: 26px;
-	text-align: center;
+  line-height: 26px;
+  text-align: center;
   width: 328px;
   display: flex;
   justify-content: center;
@@ -696,7 +697,7 @@ img {
 }
 
 .button-copyright:hover path {
-	fill: var(--basic-blue);
+  fill: var(--basic-blue);
 }
 
 .button-copyright:active path {
