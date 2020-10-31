@@ -107,7 +107,6 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  width: 1200;
   padding: 15px 0;
   margin: 0 72px;
 	list-style: none;
@@ -170,8 +169,8 @@ img {
 }
 
 .greeting-image-welcome { 
-  width: 456.65px;
-  height: 350.88px;
+  width: 457px;
+  height: 351px;
 }
 
 /* Reasons */
@@ -1026,7 +1025,6 @@ img {
 .hotels-results-item-description-wrapper {
   grid-column: 2 / 3;
   justify-self: start;
-  align-self: space-around;
   padding-top: 24px;
   padding-bottom: 15px;
 }
