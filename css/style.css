@@ -781,6 +781,11 @@ img {
   background-image: url('../img/checkbox-off.svg');
 }
 
+.filter-input-checkbox:not(:checked):focus + label::before {
+  box-shadow: 0 0 0 1px var(--basic-black),
+  0 0 0 2px var(--basic-black);
+}
+
 .filter-input-checkbox:not(:checked):disabled + label::before {
   content: "";
   position: absolute;
@@ -799,6 +804,11 @@ img {
   width: 26.17px;
   height: 23px;
   background-image: url('../img/checkbox-on.svg');
+}
+
+.filter-input-checkbox:checked:focus + label::after {
+  box-shadow: 0 0 0 1px var(--basic-black),
+  0 0 0 2px var(--basic-black);
 }
 
 .filter-input-checkbox:checked:disabled + label::after {

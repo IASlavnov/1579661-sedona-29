@@ -10,7 +10,7 @@
   <body class="page-body inner-page">
     <header class="main-header">
       <nav class="main-navigation">
-        <a class="main-header-logo" href="index.html">
+        <a class="main-header-logo" href="index.html" aria-label="На главную">
           <img src="img/logo.svg" width="138" height="70" alt="Логотип сайта городка Седона">
         </a>
         <ul class="site-navigation">
@@ -68,20 +68,20 @@
               <div class="range-filter">
                 <div class="price-controls">
                   <div class="price-controls-container">
-                    <label class="min-price">от </label>
-                    <input type="number" name="min-price" value="0">
+                    <label class="min-price" for="min-price">от </label>
+                    <input type="number" name="min-price" value="0" id="min-price">
                   </div>
                   <div class="price-controls-container">
-                    <label class="max-price">до </label>
-                    <input type="number" name="max-price" value="3000">
+                    <label class="max-price" for="max-price">до </label>
+                    <input type="number" name="max-price" value="3000" id="max-price">
                   </div>
                 </div>
                 <div class="range-controls">
                   <div class="scale">
                     <div class="bar"></div>
                   </div>
-                  <div class="toggle toggle-min" tabindex="0"></div>
-                  <div class="toggle toggle-max" tabindex="0"></div>
+                  <div class="toggle toggle-min" tabindex="0" aria-label="Изменение минимального значения стоимости"></div>
+                  <div class="toggle toggle-max" tabindex="0" aria-label="Изменение максимального значения стоимости"></div>
                 </div>
               </div>
             </fieldset>
