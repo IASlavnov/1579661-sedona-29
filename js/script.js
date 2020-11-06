@@ -18,20 +18,17 @@ try {
   isStorageSupport = false;
 }
 
-if (!searchPopup.classList.contains("modal-hide") && storageAdults && storageChildren) {
-  searchAdults.value = storageAdults;
-  searchChildren.value = storageChildren;
-}
-
 searchButton.addEventListener("click", function(evt) {
   evt.preventDefault();
-  searchPopup.classList.toggle("modal-hide");
+  searchPopup.classList.toggle("modal-show");
 
-  if (!searchPopup.classList.contains("modal-hide")) {
+  if (searchPopup.classList.contains("modal-show")) {
+    if (storageAdults && storageChildren) {
+      searchAdults.value = storageAdults;
+      searchChildren.value = storageChildren;
+    }
     searchArrivalDate.focus();
-    searchPopup.classList.add("modal-show-animation");
   } else {
-    searchPopup.classList.remove("modal-show-animation");
     searchPopup.classList.remove("modal-error");
   }
 });
@@ -52,9 +49,9 @@ searchForm.addEventListener("submit", function(evt) {
 
 window.addEventListener("keydown", function(evt) {
   if (evt.keyCode === 27) {
-    if (!searchPopup.classList.contains("modal-hide")) {
+    if (searchPopup.classList.contains("modal-show")) {
       evt.preventDefault();
-      searchPopup.classList.add("modal-hide");
+      searchPopup.classList.remove("modal-show");
       searchPopup.classList.remove("modal-error");
     }
   }

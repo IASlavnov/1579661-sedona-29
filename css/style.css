@@ -417,14 +417,11 @@ img {
 
 .modal {
   position: relative;
-  display: block;
-}
-
-.modal-hide {
   display: none;
 }
 
-.modal-show-animation {
+.modal-show {
+  display: block;
   z-index: 1;
   animation: bounce 0.6s;
 }
@@ -464,6 +461,7 @@ img {
 .modal-search-item input {
   width: 75%;
   font: inherit;
+  text-transform: uppercase;
   background-color: var(--basic-light-gray);
   box-sizing: border-box;
   border: none;
@@ -476,28 +474,19 @@ img {
 
 /* Input placeholder */
 ::-webkit-input-placeholder {
-  color: var(--basic-black);
   text-transform: uppercase;
-  opacity: 1;
 }
 
 ::-moz-placeholder {
-  color: var(--basic-black);
   text-transform: uppercase;
-  opacity: 1;
   }/* Firefox 19+ */
 
 :-moz-placeholder {
-  color: var(--basic-black);
   text-transform: uppercase;
-  opacity: 1;
   }/* Firefox 18- */
 
-
 :-ms-input-placeholder {
-  color: var(--basic-black);
   text-transform: uppercase;
-  opacity: 1;
 }
 
 .modal-search-item input:hover {
@@ -619,8 +608,7 @@ img {
 }
 
 .map {
-  width: 1199px;
-  height: 594px;
+  background-image: url('../img/map.jpg');
 }
 
 .page-footer {
