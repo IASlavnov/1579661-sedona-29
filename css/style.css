@@ -80,7 +80,7 @@ img {
   display: grid;
   grid-template-rows: min-content 1fr min-content;
   align-content: start;
-  box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
+  box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
 }
 
 /* Main navigation*/
@@ -443,7 +443,7 @@ img {
   width: 458px;
   height: 285px;
   padding: 55px;
-  box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
 }
 
 .modal-search-form .modal-search-item {
@@ -468,7 +468,6 @@ img {
   text-transform: uppercase;
   background-color: var(--basic-light-gray);
   box-sizing: border-box;
-  border: none;
   padding-left: 10px;
   padding-top: 6px;
   padding-bottom: 6px;
@@ -723,7 +722,6 @@ img {
 }
 
 .filter {
-  /*width: 1036px;*/
   display: flex;
   justify-content: space-between;
 }
@@ -808,7 +806,7 @@ img {
   position: absolute;
   top: 0;
   left: -40px;
-  width: 26.17px;
+  width: 26px;
   height: 23px;
   background-image: url('../img/checkbox-on.svg');
 }
@@ -823,7 +821,7 @@ img {
   position: absolute;
   top: 0;
   left: -40px;
-  width: 26.17px;
+  width: 26px;
   height: 23px;
   background-image: url('../img/checkbox-on-disabled.svg');
 }
