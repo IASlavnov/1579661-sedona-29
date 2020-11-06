@@ -26,6 +26,8 @@
   --basic-blue-hover: #669ec0;
   --basic-blue-active: #5496bd;
   --basic-transparent-white-active: rgba(255, 255, 255, 0.3);
+  --basic-shadow: rgba(0, 1, 1, 0.2);
+  --basic-light-shadow: rgba(0, 1, 1, 0.15);
 }
 
 /* Global */
@@ -80,7 +82,7 @@ img {
   display: grid;
   grid-template-rows: min-content 1fr min-content;
   align-content: start;
-  box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
+  box-shadow: 0 5px 15px var(--basic-shadow);
 }
 
 /* Main navigation*/
@@ -443,7 +445,7 @@ img {
   width: 458px;
   height: 285px;
   padding: 55px;
-  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+  box-shadow: 0 7px 15px var(--basic-light-shadow);
 }
 
 .modal-search-form .modal-search-item {
