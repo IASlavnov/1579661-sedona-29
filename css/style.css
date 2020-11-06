@@ -474,24 +474,6 @@ img {
   border: 2px solid var(--basic-transparent);
 }
 
-
-/* Input placeholder */
-::-webkit-input-placeholder {
-  text-transform: uppercase;
-}
-
-::-moz-placeholder {
-  text-transform: uppercase;
-  }/* Firefox 19+ */
-
-:-moz-placeholder {
-  text-transform: uppercase;
-  }/* Firefox 18- */
-
-:-ms-input-placeholder {
-  text-transform: uppercase;
-}
-
 .modal-search-item input:hover {
   background-color: var(--basic-gray-hover);
 }
