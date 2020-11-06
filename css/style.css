@@ -231,6 +231,10 @@ img {
   padding: 47px 125px 25px;
 }
 
+.reason-2-description .reasons-item-title {
+  padding-top: 49px;
+}
+
 .reasons-item p {
   padding: 1px 45px 23px; 
   line-height: 21px;
@@ -386,13 +390,13 @@ img {
   font-size: 30px;
   font-weight: bold;
   margin: 0;
-  padding-top: 58px;
-  padding-bottom: 30px;
+  padding-top: 56px;
+  padding-bottom: 32px;
 }
 
 .hotels-search p {
   margin: 0;
-  padding-bottom: 130px;
+  padding-bottom: 131px;
 }
 
 .button-search {
