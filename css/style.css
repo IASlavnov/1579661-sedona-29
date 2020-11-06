@@ -9,6 +9,7 @@
   --basic-transparent-white: rgba(255, 255, 255, 0.9);
   --basic-transparent: rgba(0, 0, 0, 0);
   --basic-gray: #888888;
+  --basic-neutral: #e5e5e5;
   --basic-gray-hover: #ebebeb;
   --basic-extra-gray: #666666;
   --basic-dark-gray: #6a6a6a;
@@ -498,7 +499,7 @@ img {
 
 .modal-search-item input:focus {
   background-color: var(--basic-white);
-  border: 2px solid #E5E5E5;
+  border: 2px solid var(--basic-neutral);
   box-sizing: border-box;
 }
 
@@ -611,6 +612,7 @@ img {
 }
 
 .map {
+  background-color: var(--basic-gray);
   background-image: url('../img/map.jpg');
 }
 
@@ -1092,6 +1094,7 @@ img {
   width: 48px;
   height: 17px;
   margin: 30px 0 30px auto;
+  background-color: var(--basic-gray);
   background-image: url('../img/star.svg');
   background-repeat: space;
 }
