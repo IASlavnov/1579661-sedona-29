@@ -7,6 +7,8 @@ const searchDepartureDate = searchPopup.querySelector("[name=departure-date]");
 const searchAdults = searchPopup.querySelector("[name=adults]");
 const searchChildren = searchPopup.querySelector("[name=children]");
 
+searchPopup.classList.add("modal-hide");
+
 let isStorageSupport = true;
 let storageAdults = "";
 let storageChildren = "";
@@ -21,6 +23,7 @@ try {
 searchButton.addEventListener("click", function(evt) {
   evt.preventDefault();
   searchPopup.classList.toggle("modal-show");
+  searchPopup.classList.toggle("modal-hide");
 
   if (searchPopup.classList.contains("modal-show")) {
     if (storageAdults && storageChildren) {

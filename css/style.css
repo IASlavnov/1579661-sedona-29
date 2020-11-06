@@ -417,13 +417,16 @@ img {
 
 .modal {
   position: relative;
-  display: none;
 }
 
 .modal-show {
   display: block;
   z-index: 1;
   animation: bounce 0.6s;
+}
+
+.modal-hide {
+  display: none;
 }
 
 .modal-error {
